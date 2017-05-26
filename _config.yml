@@ -1,1 +1,5 @@
-theme: jekyll-theme-slate
+title: mbed OS
+description: quickstart
+show_downloads: false
+google_analytics:
+theme:
