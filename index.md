@@ -1,51 +1,84 @@
 ---
 layout: default
 ---
-Setup
-==================
+# Setup
+{::options auto_ids="true" /}
+{::options parse_block_html="true" /}
 
-<div class="card">
-  <div class="card-block">
-    <h4 class="card-title">Create an mbed account.</h4>
-    <p class="card-text">Go to the <a href = "https://developer.mbed.org">mbed developer site</a> and <a href = "https://developer.mbed.org/account/signup/?next=%2F"> create an account.</a></p>
+{: .card}
+<div>
+{: .card-block}
+<div>
+{: .card-title markdown="span"}
+#### Create an mbed account
+
+  Go to the [mbed developer site](https://developer.mbed.org) and [create an account](https://developer.mbed.org/account/signup/?next=%2F).
+  {: .card-text}
+
+</div>
+</div>
+<p></p>
+
+
+{: .card}
+<div>
+{: .card-block}
+  <div>
+{: .card-title markdown="span"}
+#### How do you want to develop?
+
+{: style="text-align: center;"}
+  <div>
+{: .btn-group #step2-selector role="group"}
+  <div>
+  {::nomarkdown}
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-option1"  aria-pressed="true" aria-controls="step2-option1">Online</button>
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-option2" aria-pressed="false" aria-controls="step2-option2">Offline</button>
+  {:/}
   </div>
 </div>
-<p>
-<div class="card">
-  <div class="card-block">
-      <h4 class="card-title">How do you want to develop?</h4>
-      <div style="text-align: center;">
-      <div id="step2-selector" class="btn-group" role="group">
-            <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-option1"  aria-pressed="true" aria-controls="step2-option1">
-            Online
-            </button>
-            <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-option2" aria-pressed="false" aria-controls="step2-option2">
-            Offline
-            </button>
-      </div>
-      </div>
-  </div>
 </div>
-<p>
-<div id="step2" aria-multiselectable="true">
-  <div class="card">
-    <div id="step2-option1" class="collapse show" aria-labelledby="option1">
-      <div class="card-block">
-        <h4 class="card-title">Option 1</h4>
-        <p class="card-text">This is option 1</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div id="step2-option2" class="collapse" aria-labelledby="option2">
-      <div class="card-block">
-        <h4 class="card-title">Option 2</h4>
-        <p class="card-text">This is option 2</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
-  </div>
+</div>
+<p></p>
+
+{: #step2 aria-multiselectable="true"}
+<div>
+{: .card}
+<div>
+{: #step2-option1 .collapse .show aria-labelledby="option1"}
+<div>
+{: .card-block}
+<div>
+#### Online 1a
+
+  This is online 1a
+  {: .card-text}
+
+</div>
+* * *
+<div class="card-block">
+#### Online 1b
+
+  This is online 1b
+  {: .card-text}
+
+</div>
+</div>
+</div>
+
+
+{: .card}
+<div>
+{: #step2-option2 .collapse aria-labelledby="option2"}
+<div>
+{: .card-block}
+<div>
+#### Offline 1
+
+  This is offline 1a
+  {: .card-text}
+
+</div>
+</div>
+</div>
 </div>
