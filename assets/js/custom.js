@@ -1,8 +1,14 @@
 $(document).ready(function() {
-    $(".btn").first().addClass('active');
-});
+  var url = document.location.toString();
+  if (url.match('#') ) {
+    $('#'+url.split('#')[1]).parent().parent().addClass('show');
+    var $par = $('#'+url.split('#')[1]).parent().parent().attr('id');
+    console.log($par);
+    $('[data-target*=' + '"' + $par + '"]').addClass('active');
+  } else {
+    $(".btn").first().addClass('active').click();
+  }
 
-$(document).ready(function() {
   $('.btn-group .btn').click(function() {
     $(this).addClass('active').siblings('.btn').removeClass('active');
   });

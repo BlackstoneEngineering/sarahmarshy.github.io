@@ -29,11 +29,11 @@ layout: default
 
 {: style="text-align: center;"}
   <div>
-{: .btn-group #step2-selector role="group"}
+{: .btn-group #online-or-offline role="group"}
   <div>
   {::nomarkdown}
-    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-option1"  aria-pressed="true" aria-controls="step2-option1">Online</button>
-    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-option2" aria-pressed="false" aria-controls="step2-option2">Offline</button>
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-online" aria-controls="step2-online">Online</button>
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-offline" aria-controls="step2-offline">Offline</button>
   {:/}
   </div>
 </div>
@@ -43,9 +43,11 @@ layout: default
 
 {: #step2 aria-multiselectable="true"}
 <div>
+
 {: .card}
 <div>
-{: #step2-option1 .collapse .show aria-labelledby="option1"}
+
+{: #step2-online .collapse aria-labelledby="online"}
 <div>
 {: .card-block}
 <div>
@@ -69,13 +71,85 @@ layout: default
 
 {: .card}
 <div>
-{: #step2-option2 .collapse aria-labelledby="option2"}
+{: #step2-offline .collapse aria-labelledby="offline"}
 <div>
 {: .card-block}
 <div>
 #### Offline 1
 
   This is offline 1a
+  {: .card-text}
+
+</div>
+</div>
+</div>
+</div>
+<p></p>
+
+{: .card}
+<div>
+{: .card-block}
+  <div>
+{: .card-title markdown="span"}
+#### More options
+
+{: style="text-align: center;"}
+  <div>
+{: .btn-group #stepX-selector role="group"}
+  <div>
+  {::nomarkdown}
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#stepX" data-target="#stepX-option1" aria-controls="stepX-option1">Option 1</button>
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#stepX" data-target="#stepX-option2" aria-controls="stepX-option2">Option 2</button>
+  {:/}
+  </div>
+</div>
+</div>
+</div>
+<p></p>
+
+{: #stepX aria-multiselectable="true"}
+<div>
+{: .card}
+<div>
+{: #stepX-option1 .collapse aria-labelledby="option1"}
+<div>
+{: .card-block}
+<div>
+#### Option 1a
+
+  This is option 1a
+  {: .card-text}
+
+</div>
+* * *
+<div class="card-block">
+#### Option 1b
+
+  This is option 1b
+  {: .card-text}
+
+</div>
+</div>
+</div>
+
+
+{: .card}
+<div>
+{: #stepX-option2 .collapse aria-labelledby="option2"}
+<div>
+{: .card-block}
+<div>
+#### Option 2a
+
+  This is option 2a
+  {: .card-text}
+
+</div>
+* * *
+<div class="card-block">
+#### Option 2b
+
+  This is option 2b
   {: .card-text}
 
 </div>
