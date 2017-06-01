@@ -51,9 +51,10 @@ layout: default
 <div>
 {: .card-block}
 <div>
-#### Online 1a
+#### Get the code
 
-  This is online 1a
+  Visit the mbed-os [blinky example repository](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-blinky/), and click the "Import into Compiler" button.
+  ![import](img/import-compiler.png) 
   {: .card-text}
 
 </div>
