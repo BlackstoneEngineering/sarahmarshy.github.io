@@ -15,9 +15,9 @@ $(document).ready(function() {
 
   $('.btn').click(function() {
     $(this).addClass('active').siblings('.btn').removeClass('active');
-    //var $sibling = $(this).siblings('.btn').attr('data-target');
+    var $sibling = $(this).siblings('.btn').attr('data-target');
     //var $target = $(this).attr('data-target');
-    //jQuery($sibling).collapse('hide');
+    $($sibling).collapse('hide');
   });
   
 });
