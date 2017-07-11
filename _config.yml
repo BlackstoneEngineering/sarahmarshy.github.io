@@ -1,5 +1,8 @@
 title: mbed OS quickstart
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 show_downloads: false
 google_analytics:
 sass:

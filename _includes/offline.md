@@ -61,28 +61,48 @@ Download and run the [mbed CLI Windows installer](https://github.com/ARMmbed/mbe
 {: #offline-linux .collapse }
 <div>
 
-{: .card}
-<div>
-
-{: .card-block}
-<div>
-
 {: #offline-linux-installation }
-### Linux
+### Linux Installation
 
-1. Install [Python 2.7.11+](https://www.python.org/downloads/release/python-2711/) and add python.exe to Path
-2. Install a compiler of your choice:
-  * GCC
-  * ARMC5
-  * IAR
-3. Run pip install mbed-cli from your command line  
-You can check to see if this installed correctly by running `mbed help`
+{: .card }
+<div>
+
+{: .card-block }
+<div>
+
+{: .card-text }
+<div>
+
+#### Install Python & Pip
+
+```shell
+$ sudo apt-get install python2
+$ sudo apt-get install python-pip
+$ sudo apt-get update
+```
+
+#### Install a Compiler
+
+[ARM GCC ](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)  
+[ARMC5 ](https://developer.arm.com/products/software-development-tools/compilers/arm-compiler/downloads/version-5)  
+[IAR](https://www.iar.com/iar-embedded-workbench/tools-for-arm/)  
 {: .card-text}
+  
+#### Complete Installation
+
+```shell
+$ pip install mbed-cli
+$ mbed help               # Installation is successful if command runs
+```  
+{: .card-text}
+
+</div>
 
 </div>
 </div>
 </div>
 <p></p>
+
 
 {: #offline-mac .collapse }
 <div>
@@ -96,15 +116,10 @@ You can check to see if this installed correctly by running `mbed help`
 {: #offline-mac-installation }
 ### Mac
 
-1. Install [Python 2.7.11+](https://www.python.org/downloads/release/python-2711/) and add python.exe to Path
-2. Install a compiler of your choice:
-  * GCC
-  * ARMC5
-  * IAR
-3. Run pip install mbed-cli from your command line  
-You can check to see if this installed correctly by running `mbed help`
 {: .card-text}
 
+
+
 </div>
 </div>
 </div>
@@ -112,19 +127,3 @@ You can check to see if this installed correctly by running `mbed help`
 
 </div>
 <p></p>
-
-<!--{: .terminal }
-<div>
-
-{: .shell-header }
-<div>
-</div>
-
-{: .shell }
-<div>
-<span class="path">~</span>
-<span class="prompt">$</span>
-git clone https://github.com/username/username.github.io
-</div>
-
-</div>-->
