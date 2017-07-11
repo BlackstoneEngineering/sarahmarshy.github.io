@@ -25,6 +25,9 @@
     <button class="btn btn-outline-primary" style="cursor: pointer" type="button" 
       data-toggle="collapse" data-parent="#offline-os" data-target="#offline-linux" 
       aria-controls="offline-linux">Linux</button>
+    <button class="btn btn-outline-primary" style="cursor: pointer" type="button" 
+      data-toggle="collapse" data-parent="#offline-os" data-target="#offline-mac" 
+      aria-controls="offline-mac">Mac</button>
   {:/}
   </div>
 </div>
@@ -47,14 +50,8 @@
 {: #offline-windows-installation }
 #### Windows Installation
 
-1. Install [Python 2.7.11+](https://www.python.org/downloads/release/python-2711/) and add python.exe to Path
-2. Install a compiler of your choice:
-  * GCC
-  * ARMC5
-  * IAR
-3. Run pip install mbed-cli from your command line  
-You can check to see if this installed correctly by running `mbed help`
-  {: .card-text}
+Download and run the [mbed CLI Windows installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases).
+{: .card-text}
   
 </div>
 </div>
@@ -80,8 +77,34 @@ You can check to see if this installed correctly by running `mbed help`
   * IAR
 3. Run pip install mbed-cli from your command line  
 You can check to see if this installed correctly by running `mbed help`
-  {: .card-text}
-  
+{: .card-text}
+
+</div>
+</div>
+</div>
+<p></p>
+
+{: #offline-mac .collapse }
+<div>
+
+{: .card}
+<div>
+
+{: .card-block}
+<div>
+
+{: #offline-mac-installation }
+### Mac
+
+1. Install [Python 2.7.11+](https://www.python.org/downloads/release/python-2711/) and add python.exe to Path
+2. Install a compiler of your choice:
+  * GCC
+  * ARMC5
+  * IAR
+3. Run pip install mbed-cli from your command line  
+You can check to see if this installed correctly by running `mbed help`
+{: .card-text}
+
 </div>
 </div>
 </div>
@@ -89,3 +112,19 @@ You can check to see if this installed correctly by running `mbed help`
 
 </div>
 <p></p>
+
+<!--{: .terminal }
+<div>
+
+{: .shell-header }
+<div>
+</div>
+
+{: .shell }
+<div>
+<span class="path">~</span>
+<span class="prompt">$</span>
+git clone https://github.com/username/username.github.io
+</div>
+
+</div>-->
