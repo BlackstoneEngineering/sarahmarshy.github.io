@@ -1,17 +1,25 @@
 $(document).ready(function() {
   var url = document.location.toString();
-  if (url.match('#') ) {
-    $('#'+url.split('#')[1]).parent().parent().addClass('show');
-    var $par = $('#'+url.split('#')[1]).parent().parent().attr('id');
-    console.log($par);
+  if (url.match('#')) {
+    var $urlR =  $('#'+url.split('#')[1]);
+    var $par = $urlR.closest("div[id]").attr('id');
+    $urlR.closest("div[id]").addClass('show');
     $('[data-target*=' + '"' + $par + '"]').addClass('active');
+    var $btnPar = $("#" + $par).parents('div[id]').not("#compile").last().attr('id');
+    $('[data-target*=' + '"' + $btnPar + '"]').addClass('active').click();
+    console.log($par);
+    console.log($btnPar);
   } else {
     $(".btn").first().addClass('active').click();
   }
 
-  $('.btn-group .btn').click(function() {
+  $('.btn').click(function() {
     $(this).addClass('active').siblings('.btn').removeClass('active');
+    var $sibling = $(this).siblings('.btn').attr('data-target');
+    //var $target = $(this).attr('data-target');
+    jQuery($sibling).collapse('hide');
   });
+  
 });
 
 $(function() {

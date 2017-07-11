@@ -2,4 +2,5 @@ title: mbed OS quickstart
 markdown: kramdown
 show_downloads: false
 google_analytics:
-theme:
+sass:
+    sass_dir: _sass/

@@ -32,8 +32,8 @@ layout: default
 {: .btn-group #online-or-offline role="group"}
   <div>
   {::nomarkdown}
-    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-online" aria-controls="step2-online">Online</button>
-    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#step2" data-target="#step2-offline" aria-controls="step2-offline">Offline</button>
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#compile" data-target="#online-compile" aria-controls="online-compile">Online</button>
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-parent="#compile" data-target="#offline-compile" aria-controls="offline-compile">Offline</button>
   {:/}
   </div>
 </div>
@@ -41,13 +41,13 @@ layout: default
 </div>
 <p></p>
 
-{: #step2 aria-multiselectable="true"}
+{: #compile aria-multiselectable="true"}
 <div>
 
 {: .card}
 <div>
 
-{: #step2-online .collapse aria-labelledby="online"}
+{: #online-compile .collapse aria-labelledby="online"}
 <div>
 {: .card-block}
 <div>
@@ -72,7 +72,7 @@ layout: default
 
 {: .card}
 <div>
-{: #step2-offline .collapse aria-labelledby="offline"}
+{: #offline-compile .collapse aria-labelledby="offline"}
 <div>
 {: .card-block}
 <div>

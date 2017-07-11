@@ -4,14 +4,14 @@ $medium-breakpoint: 42em !default;
 
 // Headers
 $header-heading-color: #fff !default;
-$header-bg-color: #159957 !default;
-$header-bg-color-secondary: #155799 !default;
-$brand-primary: #159957;
+$header-bg-color: #00a960 !default; //#155799
+$header-bg-color-secondary: #128cab !default; //#159957
+$brand-primary: #128cab;
 
 // Text
-$section-headings-color: #159957 !default;
+$section-headings-color: #00a960 !default; //#159957
 $body-text-color: #606c71 !default;
-$body-link-color: #1e6bb8 !default;
+$body-link-color: #128cab !default;
 $blockquote-text-color: #819198 !default;
 
 // Code
