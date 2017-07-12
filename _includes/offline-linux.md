@@ -36,11 +36,11 @@ Download and install a compiler:
 {: #offline-linux-mbed-cli }
 #### 3. Install mbed CLI
 
-  {: .card-text }
-  <div>
   To install mbed CLI, run `pip install mbed-cli` from your command line.  
+  {: .card-text }
+  
   You can check to make sure the mbed CLI installed correctly by running `mbed help`.
-  </div>
+  {: .card-text }
   
 {: #offline-linux-setup }
 #### 4. Setup Environment

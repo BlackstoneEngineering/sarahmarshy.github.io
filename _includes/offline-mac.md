@@ -34,6 +34,7 @@ Download and install a compiler:
 #### 3. Install mbed CLI
 
   To install mbed CLI, run `pip install mbed-cli` from your command line.
+  {: .card-text }
 
   You can check to make sure the mbed CLI installed correctly by running `mbed help`.
   {: .card-text }

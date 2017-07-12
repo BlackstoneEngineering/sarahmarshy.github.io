@@ -10,7 +10,7 @@ $(document).ready(function() {
     console.log($par);
     console.log($btnPar);
   } else {
-    $(".btn").first().addClass('active').click();
+    //$(".btn").first().addClass('active').click();
     $('[data-target*=' + '"' + "#offline-windows" + '"]').addClass('active');
     $("#offline-windows").addClass('show');
   }
