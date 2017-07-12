@@ -22,25 +22,12 @@ h6:hover .header-link {
 
 .btn {
   margin-bottom: 0rem !important;
+  cursor: pointer !important;
 }
 
 pre {
-  border: none!important;
+  //border: none!important;
 }
 
 @import 'jekyll-theme-cayman';
 @import "bootstrap";
-
-/**
-pre {
-    padding: 12px!important;
-    margin: 0!important;
-    font-size: 85%!important;
-    background-color: #f7f7f7!important;
-    border-radius: 3px!important;
-    border: none!important;
-    color: inherit!important;
-    margin-bottom: 15px!important;
-}
-
-**/

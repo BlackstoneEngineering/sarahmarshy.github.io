@@ -8,11 +8,13 @@
   {% include header.html %}
 
   <section class="main-content">
-    {% capture setup %}{% include setup.md %}{% endcapture %}
-    {{ setup | markdownify }}
-
-    {% capture development %}{% include development.md %}{% endcapture %}
-    {{ development | markdownify }}
+    
+    {% capture main %}{% include main.md %}{% endcapture %}
+    {{ main | markdownify }}
+    
+    {% capture develop %}{% include develop.md %}{% endcapture %}
+    {{ develop | markdownify }}
+    
   </section>
 
   </body>

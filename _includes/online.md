@@ -11,6 +11,7 @@
 
 {: .card-block}
 <div>
+
 #### Get the code
 
   Visit the mbed-os [blinky example repository](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-blinky/), and click the "Import into Compiler" button.
@@ -19,5 +20,9 @@
 
 </div>
 </div>
+<p></p>
+
+{% include blinky-online.md %}
+
 </div>
 <p></p>

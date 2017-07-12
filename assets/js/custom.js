@@ -3,7 +3,7 @@ $(document).ready(function() {
   if (url.match('#')) {
     var $urlR =  $('#'+url.split('#')[1]);
     var $par = $urlR.closest("div[id]").attr('id');
-    var $btnPar = $("#" + $par).parents('div[id]').not("#compile").last().attr('id');
+    var $btnPar = $("#" + $par).parents('div[id]').not("#develop").last().attr('id');
     $('[data-target*=' + '"' + $btnPar + '"]').addClass('active').click();
     $urlR.closest("div[id]").addClass('show');
     $('[data-target*=' + '"' + $par + '"]').addClass('active');
@@ -11,6 +11,8 @@ $(document).ready(function() {
     console.log($btnPar);
   } else {
     $(".btn").first().addClass('active').click();
+    $('[data-target*=' + '"' + "#offline-windows" + '"]').addClass('active');
+    $("#offline-windows").addClass('show');
   }
 
   $('.btn').click(function() {

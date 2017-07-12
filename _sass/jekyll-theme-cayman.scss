@@ -200,9 +200,9 @@ a {
     margin-top: 0;
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    color: $code-text-color;
+    color: $pre-text-color;
     word-wrap: normal;
-    background-color: $code-bg-color;
+    background-color: $pre-bg-color;
     border: solid 1px $border-color;
     border-radius: 0.3rem;
 
@@ -210,7 +210,7 @@ a {
       padding: 0;
       margin: 0;
       font-size: 0.9rem;
-      color: $code-text-color;
+      color: $pre-text-color;
       word-break: normal;
       white-space: pre;
       background: transparent;
