@@ -13,7 +13,6 @@
 {: .card-block}
 <div>
 
-{: #offline-blinky-code }
 #### Get the code
 
 blinky

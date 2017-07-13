@@ -13,13 +13,11 @@
 {: #offline-windows-setup }
 ### Windows Setup
 
-{: #offline-windows-mbed-cli }
 #### 1. Install mbed CLI
 
 Download and run the [mbed CLI Windows .exe installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases).
 {: .card-text}
 
-{: #offline-windows-setup }
 #### 2. Setup Environment
 
 Make sure the compiler is available in your global path:

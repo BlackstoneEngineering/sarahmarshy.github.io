@@ -13,7 +13,6 @@
 {: #offline-linux-setup }
 ### Linux Setup
 
-{: #offline-linux-python }
 #### 1. Install Python & Pip
 
 Download and install [Python 2.7.9+](https://www.python.org/downloads/source/) or run the following from your command line:
@@ -24,7 +23,6 @@ $ sudo apt-get install python-pip
 $ sudo apt-get update
 ```
 
-{: #offline-linux-compiler }
 #### 2. Install a Compiler
 
 Download and install a compiler:
@@ -33,16 +31,14 @@ Download and install a compiler:
 * [ARMCC ](https://developer.arm.com/products/software-development-tools/compilers/arm-compiler/downloads/version-5)  
 * [IAR](https://www.iar.com/iar-embedded-workbench/tools-for-arm/)  
 
-{: #offline-linux-mbed-cli }
 #### 3. Install mbed CLI
 
-  To install mbed CLI, run `pip install mbed-cli` from your command line.  
-  {: .card-text }
-  
-  You can check to make sure the mbed CLI installed correctly by running `mbed help`.
-  {: .card-text }
-  
-{: #offline-linux-setup }
+To install mbed CLI, run `pip install mbed-cli` from your command line.  
+{: .card-text }
+
+You can check to make sure the mbed CLI installed correctly by running `mbed help`.
+{: .card-text }
+
 #### 4. Setup Environment
 
 Make sure the compiler is available in your global path:

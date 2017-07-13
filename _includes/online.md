@@ -15,13 +15,11 @@
 {: #online-setup }
 ### Setup
 
-{: #online-create-account }
 #### 1. Create an mbed Developer Account
 
 Go to [developer.mbed.org](https://developer.mbed.org) and [create an account](https://developer.mbed.org/account/signup/?next=%2F).
 {: .card-text}
 
-{: #online-setup-environment }
 #### 2. Setup Environment
 
 1. Plug your mbed board into your computer and open it's USB device folder
