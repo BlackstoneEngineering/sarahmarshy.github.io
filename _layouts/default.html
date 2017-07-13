@@ -12,11 +12,29 @@
     {% capture main %}{% include main.md %}{% endcapture %}
     {{ main | markdownify }}
     
-    {% capture develop %}{% include develop.md %}{% endcapture %}
-    {{ develop | markdownify }}
-    
+    <div id="develop" aria-multiselectable="true">
+
+      {% capture online %}{% include online.md %}{% endcapture %}
+      {{ online | markdownify }}
+
+      {% capture offline %}{% include offline.md %}{% endcapture %}
+      {{ offline | markdownify }}
+
+    </div>
+
+    <div id="blinky" aria-multiselectable="true">
+      
+      {% capture blinky-online %}{% include blinky-online.md %}{% endcapture %}
+      {{ blinky-online | markdownify }}
+
+      {% capture blinky-offline %}{% include blinky-offline.md %}{% endcapture %}
+      {{ blinky-offline | markdownify }}
+      
+    </div>
+
   </section>
 
+  <div id="end">&nbsp;</div>
   </body>
   
 </html>

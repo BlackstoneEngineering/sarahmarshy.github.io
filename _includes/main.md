@@ -4,30 +4,7 @@
 {: #main }
 <div>
 
-## Setup
-
-{: .card}
-<div>
-
-{: .card-block}
-<div>
-
-#### Create an mbed Account
-
-Go to the [mbed developer site](https://developer.mbed.org) and [create an account](https://developer.mbed.org/account/signup/?next=%2F).
-{: .card-text}
-
-</div>
-</div>
-<p></p>
-
-{: .card}
-<div>
-
-{: .card-block}
-  <div>
-
-#### How do you want to develop?
+## How do you want to develop?
 
 {: style="text-align: center;"}
   <div>
@@ -42,8 +19,6 @@ Go to the [mbed developer site](https://developer.mbed.org) and [create an accou
       aria-controls="offline-compile">Offline</button>
   {:/}
   </div>
-</div>
-</div>
 </div>
 
 </div>

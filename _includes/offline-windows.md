@@ -4,9 +4,6 @@
 {: #offline-windows .collapse }
 <div>
 
-{: #offline-windows-installation }
-### Windows Installation
-
 {: .card}
 <div>
 
@@ -14,6 +11,9 @@
 <div>
 
 {: #offline-windows-setup }
+### Windows Setup
+
+{: #offline-windows-mbed-cli }
 #### 1. Install mbed CLI
 
 Download and run the [mbed CLI Windows .exe installer](https://github.com/ARMmbed/mbed-cli-windows-installer/releases).

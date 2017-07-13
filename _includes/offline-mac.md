@@ -4,14 +4,14 @@
 {: #offline-mac .collapse }
 <div>
 
-{: #offline-mac-installation }
-### Mac Installation
-
 {: .card}
 <div>
 
 {: .card-block}
 <div>
+
+{: #offline-mac-setup }
+### Mac Setup
 
 {: #offline-mac-python }
 #### 1. Install Python & Pip

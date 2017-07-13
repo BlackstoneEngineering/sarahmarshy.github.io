@@ -4,7 +4,7 @@
 {: #online-compile .collapse }
 <div>
 
-## Online Development
+## Online
 
 {: .card}
 <div>
@@ -12,17 +12,36 @@
 {: .card-block}
 <div>
 
-#### Get the code
+{: #online-setup }
+### Setup
 
-  Visit the mbed-os [blinky example repository](https://developer.mbed.org/teams/mbed-os-examples/code/mbed-os-example-blinky/), and click the "Import into Compiler" button.
-  ![import](img/import-compiler.png) 
-  {: .card-text}
+{: #online-create-account }
+#### 1. Create an mbed Developer Account
+
+Go to [developer.mbed.org](https://developer.mbed.org) and [create an account](https://developer.mbed.org/account/signup/?next=%2F).
+{: .card-text}
+
+{: #online-setup-environment }
+#### 2. Setup Environment
+
+1. Plug your mbed board into your computer and open it's USB device folder
+2. Double click on the `MBED.HTM` file (this will add your mbed platform to the online compiler)
+{: .card-text}
+
+If you do not have an mbed board, go to [developer.mbed.org/platforms](https://developer.mbed.org/platforms), select a board and click the "Add to your mbed Compiler" button.
+{: .card-text}
 
 </div>
 </div>
 <p></p>
 
-{% include blinky-online.md %}
+{: style="text-align: center;"}
+<div>
+  {::nomarkdown}
+    <button class="btn btn-outline-primary" type="button" 
+      data-toggle="collapse" data-parent="#blinky" data-target="#blinky-online" 
+      aria-controls="blinky-online">Next: Create your first program</button>
+  {:/}
+</div>
 
 </div>
-<p></p>

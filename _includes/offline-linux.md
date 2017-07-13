@@ -4,14 +4,14 @@
 {: #offline-linux .collapse }
 <div>
 
-{: #offline-linux-installation }
-### Linux Installation
-
 {: .card }
 <div>
 
 {: .card-block }
 <div>
+
+{: #offline-linux-setup }
+### Linux Setup
 
 {: #offline-linux-python }
 #### 1. Install Python & Pip

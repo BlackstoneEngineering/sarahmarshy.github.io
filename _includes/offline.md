@@ -4,15 +4,7 @@
 {: #offline-compile .collapse }
 <div>
 
-## Offline Development
-
-{: .card}
-<div>
-
-{: .card-block}
-<div>
-{: #offline-operating-system }
-#### Choose your Operating System
+## Offline
 
 {: style="text-align: center;"}
 <div>
@@ -31,8 +23,7 @@
   {:/}
   </div>
 </div>
-</div>
-</div>
+
 <p></p>
 
 {: #offline-os aria-multiselectable="true" }
@@ -44,8 +35,13 @@
 
 {% include offline-mac.md %}
 
-{% include blinky-offline.md %}
+{: style="text-align: center;"}
+<div>
+  {::nomarkdown}
+    <button class="btn btn-outline-primary" type="button" 
+      data-toggle="collapse" data-parent="#blinky" data-target="#blinky-offline" 
+      aria-controls="blinky-offline">Next: Create your first program</button>
+  {:/}
+</div>
 
 </div>
-<p></p>
-

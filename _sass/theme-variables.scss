@@ -7,28 +7,20 @@ $header-heading-color: #fff !default;
 $header-bg-color: #00a960 !default; //#155799
 $header-bg-color-secondary: #128cab !default; //#159957
 $brand-primary: #128cab;
+$brand-secondary: #00a960;
 
 // Text
 $section-headings-color: #00a960 !default; //#159957
 $body-text-color: #606c71 !default;
-$body-link-color: #128cab !default;
+$body-link-color: #00a960 !default; //#128cab
 $blockquote-text-color: #819198 !default;
 
 // Code
-//$pre-bg-color: #2d2d2d !default;
-//$pre-text-color: #f7f7f7 !default;
-
 $pre-bg-color: #f7f7f7 !default;
 $pre-text-color: #333 !default;
 
-//$pre-bg-color: #f3f6fa !default;
-//$pre-text-color: #567482 !default;
-
-$code-bg-color: #f3f6fa !default;
-$code-text-color: #567482 !default;
-
-//$code-bg-color: #f7f7f7 !default;
-//$code-text-color: #333 !default;
+$code-bg-color: #f7f7f7 !default; //lighten(#128cab, 61%) !default;
+$code-text-color: #333 !default;
 
 // Borders
 $border-color: #d3d3d3 !default; // #dce6f0
