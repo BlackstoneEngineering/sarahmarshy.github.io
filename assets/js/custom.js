@@ -30,20 +30,22 @@ $(document).ready(function() {
     }
     
     if ($dataTarget == "#online-compile") {
-      //$("#develop").removeAttr("hidden");
+      $("#develop").removeAttr("hidden");
       $('[data-target*=' + '"' + "#blinky-offline" + '"]').removeClass('active');
       $("#blinky-offline").collapse('hide');
     } else if ($dataTarget == "#offline-compile") {
-      //$("#develop").removeAttr("hidden");
+      $("#develop").removeAttr("hidden");
       $('[data-target*=' + '"' + "#blinky-online" + '"]').removeClass('active');
       $("#blinky-online").collapse('hide');
     }
 
     if ($(this).attr('data-target') == "#blinky-online") {
-      //$("#develop").attr('hidden', 'true');
+      $("#develop").attr('hidden', 'true');
+      $('[data-target*=' + '"' + "#online-compile" + '"]').click();
       $("html, body").animate({ scrollTop: $('#end').offset().top }, 1000);
     } else if ($(this).attr('data-target') == "#blinky-offline") {
-      //$("#develop").attr('hidden', 'true');
+      $("#develop").attr('hidden', 'true');
+      $('[data-target*=' + '"' + "#offline-compile" + '"]').click();
       $("html, body").animate({ scrollTop: $('#end').offset().top }, 1000);
     } 
   });
