@@ -18,16 +18,13 @@
 #### 1. Create an mbed Developer Account
 
 Go to [developer.mbed.org](https://developer.mbed.org) and [create an account](https://developer.mbed.org/account/signup/?next=%2F).
-{: .card-text}
 
 #### 2. Setup Environment
 
 1. Plug your mbed board into your computer and open it's USB device folder
 2. Double click on the `MBED.HTM` file (this will add your mbed platform to the online compiler)
-{: .card-text}
 
 If you do not have an mbed board, go to [developer.mbed.org/platforms](https://developer.mbed.org/platforms), select a board and click the "Add to your mbed Compiler" button.
-{: .card-text}
 
 </div>
 </div>

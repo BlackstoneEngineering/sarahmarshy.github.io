@@ -6,16 +6,16 @@
   <body>
 
   {% include header.html %}
-
+  
   <section class="main-content">
     
     {% capture main %}{% include main.md %}{% endcapture %}
-    {{ main | markdownify }}
+    {{ main | markdownify }} 
     
     <p></p>
     
     <div id="develop" aria-multiselectable="true">
-
+      
       {% capture online %}{% include online.md %}{% endcapture %}
       {{ online | markdownify }}
 
@@ -35,10 +35,21 @@
       {{ blinky-offline | markdownify }}
       
     </div>
+    
+    <p></p>
+    
+    <div id="debug" aria-multiselectable="true">
+      
+      {% capture debugging-online %}{% include debugging-online.md %}{% endcapture %}
+      {{ debugging-online | markdownify }}
+
+      {% capture debugging-offline %}{% include debugging-offline.md %}{% endcapture %}
+      {{ debugging-offline | markdownify }}
+    
+    </div>
 
   </section>
 
-  <div id="end">&nbsp;</div>
   </body>
   
 </html>

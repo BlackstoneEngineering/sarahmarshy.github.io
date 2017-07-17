@@ -25,5 +25,12 @@ h6:hover .header-link {
   cursor: pointer !important;
 }
 
+.card-block {
+  
+  > :last-child  {
+      margin-bottom: 0;
+  }
+}
+
 @import 'jekyll-theme-cayman';
 @import "bootstrap";

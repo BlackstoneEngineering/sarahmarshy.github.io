@@ -27,27 +27,23 @@ $ sudo apt-get update
 
 Download and install a compiler:
 
-* [ARM GCC ](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)  
-* [ARMCC ](https://developer.arm.com/products/software-development-tools/compilers/arm-compiler/downloads/version-5)  
-* [IAR](https://www.iar.com/iar-embedded-workbench/tools-for-arm/)  
+  * [ARM GCC ](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)  
+  * [ARMCC ](https://developer.arm.com/products/software-development-tools/compilers/arm-compiler/downloads/version-5)  
+  * [IAR](https://www.iar.com/iar-embedded-workbench/tools-for-arm/)  
 
 #### 3. Install mbed CLI
 
 To install mbed CLI, run `pip install mbed-cli` from your command line.  
-{: .card-text }
 
 You can check to make sure the mbed CLI installed correctly by running `mbed help`.
-{: .card-text }
 
 #### 4. Setup Environment
 
 Make sure the compiler is available in your global path:
-{: .card-text }
 
   * ARM GCC - run `arm-none-eabi-gcc --version` in your terminal
   * ARMCC - run `armcc` with no arguments in your terminal
   * IAR - run `iccarm --version` in your terminal
-{: .card-text }
 
 </div>
 </div>

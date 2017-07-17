@@ -3,13 +3,17 @@ $(document).ready(function() {
   if (anchor.match('#')) {
     var $urlR =  $(anchor);
     var $par = $urlR.closest("div[id]").attr('id');
-    var $btnPar = $("#" + $par).parents('div[id]').not("#develop").not("#blinky").last().attr('id');
-    $('[data-target*=' + '"' + $btnPar + '"]').addClass('active').click();
+    var $btnPar = $("#" + $par).parents('div[id]').not("#develop").not("#blinky").not("#debug").last().attr('id');
+    if (anchor.includes("online")) {
+      $('[data-target*=' + '"' + "online-compile" + '"]').first().addClass('active');
+    } else if (anchor.includes("offline")) {
+      $('[data-target*=' + '"' + "offline-compile" + '"]').first().addClass('active');
+    }
+    $('[data-target*=' + '"' + $btnPar + '"]').first().click().addClass('active');
     $urlR.closest("div[id]").addClass('show');
-    $('[data-target*=' + '"' + $par + '"]').addClass('active');
+    $('[data-target*=' + '"' + $par + '"]').first().addClass('active');
     console.log("par = " + $par);
     console.log("btnPar = " + $btnPar);
-        
   } else {
     $('[data-target*=' + '"' + "#offline-windows" + '"]').addClass('active');
     $("#offline-windows").addClass('show');
@@ -18,39 +22,32 @@ $(document).ready(function() {
   $('.btn').click(function() {
     
     var $dataTarget = $(this).attr('data-target');
+    console.log("button target = " + $dataTarget);
     
-    if ($(this).hasClass('active')) {
-      $(this).removeClass('active');
-    } else {
-      $(this).addClass('active').siblings('.btn').removeClass('active');
-      $(this).siblings('.btn').each(function() {
-        var $sibling = $(this).attr('data-target');
-        $($sibling).collapse('hide');
+    $(this).first().addClass('active').siblings('.btn').removeClass('active');
+    $(this).siblings('.btn').each(function() {
+      var $sibling = $(this).attr('data-target');
+      $($sibling).collapse('hide');
+    });
+    
+    /** Sort of JavaScript Div pagination **/
+    $($dataTarget).parents('div[id]').siblings('div[id]').each(function() {
+      var $targetChildren = $(this).children('div[id]');
+      $targetChildren.each(function() {
+        $thisTarget = $(this).attr('id');
+        $('[data-target*=' + '"' + $thisTarget + '"]').removeClass('active');
+        $("#" + $thisTarget).collapse('hide');
       });
-    }
+    });
     
-    if ($dataTarget == "#online-compile") {
-      $("#develop").removeAttr("hidden");
-      $('[data-target*=' + '"' + "#blinky-offline" + '"]').removeClass('active');
-      $("#blinky-offline").collapse('hide');
-    } else if ($dataTarget == "#offline-compile") {
-      $("#develop").removeAttr("hidden");
-      $('[data-target*=' + '"' + "#blinky-online" + '"]').removeClass('active');
-      $("#blinky-online").collapse('hide');
+    /** Keep respective Online/Offline button active **/
+    if ($dataTarget.includes("online")) {
+      $('[data-target*=' + '"' + "online-compile" + '"]').first().addClass('active');
+    } else if ($dataTarget.includes("offline")) {
+      $('[data-target*=' + '"' + "offline-compile" + '"]').first().addClass('active');
     }
-
-    if ($(this).attr('data-target') == "#blinky-online") {
-      $("#develop").attr('hidden', 'true');
-      $('[data-target*=' + '"' + "#online-compile" + '"]').click();
-      $("html, body").animate({ scrollTop: $('#end').offset().top }, 1000);
-    } else if ($(this).attr('data-target') == "#blinky-offline") {
-      $("#develop").attr('hidden', 'true');
-      $('[data-target*=' + '"' + "#offline-compile" + '"]').click();
-      $("html, body").animate({ scrollTop: $('#end').offset().top }, 1000);
-    } 
+  
   });
-  
-  
   
 });
 
