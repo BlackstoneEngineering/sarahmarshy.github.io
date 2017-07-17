@@ -33,7 +33,7 @@ Download and install a compiler:
 
 #### 3. Install mbed CLI
 
-To install mbed CLI, run `pip install mbed-cli` from your command line.  
+To install the mbed CLI, run `pip install mbed-cli` from your command line.
 
 You can check to make sure the mbed CLI installed correctly by running `mbed help`.
 
@@ -41,9 +41,9 @@ You can check to make sure the mbed CLI installed correctly by running `mbed hel
 
 Make sure the compiler is available in your global path:
 
-  * ARM GCC - run `arm-none-eabi-gcc --version` in your terminal
-  * ARMCC - run `armcc` with no arguments in your terminal
-  * IAR - run `iccarm --version` in your terminal
+  * ARM GCC: run `arm-none-eabi-gcc --version` from your command line
+  * ARMCC:  run `armcc` with no arguments from your command line
+  * IAR: run `iccarm --version` from your command line
 
 </div>
 </div>

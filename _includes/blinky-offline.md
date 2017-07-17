@@ -34,8 +34,6 @@ The `-f` argument will automatically flash the compiled program onto your board 
 
 After the program has been flashed to the board, press the board's "reset" button and you should now see the LED blinking.
 
-<!-- For *very verbose* error information, add the `-vv` argument to `mbed compile`. -->
-
 </div>
 </div>
 <p></p>

@@ -23,9 +23,9 @@ $ mbed export -i uvision -m K64F
 
 #### Printf
 
-Another way to do basic debugging is to use the `printf` command in your code, then read the output using a serial terminal such as [PuTTY](http://www.putty.org/) or [CoolTerm](http://freeware.the-meiers.org/). For example, add `printf("Hello World!\n\r");` to the top of your main function.
+Another way to do basic debugging is to use the `printf` command in your code, then read the output using a serial terminal such as [PuTTY](http://www.putty.org/) or [CoolTerm](http://freeware.the-meiers.org/). For example, add `printf("Hello World!\n\r");` to the top of your main function, then recompile the program and flash it to your device.
 
-Invoke `mbed detect` from your command line to determine which communication port your board is connected to (i.e. `COM18`, `/dev/ttyACM0`, etc.). Unless otherwise specified, `printf` defaults to a baud rate of `9600` on mbed OS.
+Invoke `mbed detect` from your command line to determine which communication port your board is connected to (i.e. `COM18`, `/dev/ttyACM0`, etc.). Unless otherwise specified, `printf` defaults to a baud rate/speed of `9600` on mbed OS.
 
 </div>
 </div>
