@@ -26,10 +26,18 @@ h6:hover .header-link {
 }
 
 .card-block {
-  
   > :last-child  {
       margin-bottom: 0;
   }
+}
+
+.video {
+  width: 75%;
+  margin: auto !important;
+}
+
+img {
+  border: 1px solid #cfcfcf !important;
 }
 
 @import 'jekyll-theme-cayman';

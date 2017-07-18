@@ -3,7 +3,7 @@ $(document).ready(function() {
   if (anchor.match('#')) {
     var $urlR =  $(anchor);
     var $par = $urlR.closest("div[id]").attr('id');
-    var $btnPar = $("#" + $par).parents('div[id]').not("#develop").not("#blinky").not("#debug").last().attr('id');
+    var $btnPar = $("#" + $par).parents('div[id]').not("#develop").not("#blinky").not("#debug").not("#more").last().attr('id');
     if (anchor.includes("online")) {
       $('[data-target*=' + '"' + "online-compile" + '"]').first().addClass('active');
     } else if (anchor.includes("offline")) {

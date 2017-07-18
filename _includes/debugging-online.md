@@ -48,6 +48,11 @@ Run `ls /dev/tty.*` from your command line.
       data-toggle="collapse" data-parent="#blinky" data-target="#blinky-online" 
       aria-controls="blinky-online">Go Back</button>
   {:/}
+  {::nomarkdown}
+    <button class="btn btn-outline-primary" type="button" 
+      data-toggle="collapse" data-parent="#more" data-target="#more-reading-online" 
+      aria-controls="more-reading-online">Next: Further reading</button>
+  {:/}
 </div>
 
 </div>

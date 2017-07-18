@@ -18,7 +18,7 @@
 From your command line, import the example:
 
 ```console
-$ mbed import mbed-os-example-blinky
+$ mbed import https://github.com/ARMmbed/mbed-os-example-blinky
 $ cd mbed-os-example-blinky
 ```
   

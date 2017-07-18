@@ -15,7 +15,7 @@
 
 #### 1. Install Python & Pip
 
-Mac OS X 10.8+ comes with Python 2.7 pre-installed by Apple. If you are running an earlier version of Mac OS X, download and install [Python 2.7.9+](https://www.python.org/downloads/mac-osx/).
+Mac OS X 10.8+ comes with Python 2.7 pre-installed by Apple. If you are running an earlier version of Mac OS X, download and install [Python 2.7.12+](https://www.python.org/downloads/mac-osx/).
 
 To install Pip, run `sudo easy_install pip` from your command line.
 

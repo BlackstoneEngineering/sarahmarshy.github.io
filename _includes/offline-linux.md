@@ -15,7 +15,7 @@
 
 #### 1. Install Python & Pip
 
-Download and install [Python 2.7.9+](https://www.python.org/downloads/source/) or run the following from your command line:
+Download and install [Python 2.7.12+](https://www.python.org/downloads/source/) or run the following from your command line:
 
 ```console
 $ sudo apt-get install python2.7

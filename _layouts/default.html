@@ -50,9 +50,13 @@
     
     <p></p>
     
-    <div id="more-blinky" aria-multiselectable="true">
+    <div id="more" aria-multiselectable="true">
       
-      
+      {% capture further-reading-online %}{% include further-reading-online.md %}{% endcapture %}
+      {{ further-reading-online | markdownify }}
+
+      {% capture further-reading-offline %}{% include further-reading-offline.md %}{% endcapture %}
+      {{ further-reading-offline | markdownify }}
     
     </div>
 

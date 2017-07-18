@@ -15,6 +15,11 @@
 {: #online-setup }
 ### Setup
 
+<!--
+{: .video }
+![video-placeholder](img/video-placeholder.png)
+-->
+
 #### 1. Create an mbed Developer Account
 
 Go to [developer.mbed.org](https://developer.mbed.org) and [create an account](https://developer.mbed.org/account/signup/?next=%2F).
@@ -25,6 +30,9 @@ Go to [developer.mbed.org](https://developer.mbed.org) and [create an account](h
 2. Double click on the `MBED.HTM` file (this will add your mbed platform to the online compiler)
 
 If you do not have an mbed board, go to [developer.mbed.org/platforms](https://developer.mbed.org/platforms), select a board and click the "Add to your mbed Compiler" button.
+
+{: style="text-align: center;" }
+![add-to-compiler](img/add-to-compiler.png) 
 
 </div>
 </div>

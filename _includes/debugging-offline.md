@@ -38,6 +38,11 @@ Invoke `mbed detect` from your command line to determine which communication por
       data-toggle="collapse" data-parent="#blinky" data-target="#blinky-offline" 
       aria-controls="blinky-offline">Go Back</button>
   {:/}
+  {::nomarkdown}
+    <button class="btn btn-outline-primary" type="button" 
+      data-toggle="collapse" data-parent="#more" data-target="#more-reading-offline" 
+      aria-controls="more-reading-offline">Next: Further reading</button>
+  {:/}
 </div>
 
 </div>
